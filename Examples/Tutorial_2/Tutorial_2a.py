@@ -1,12 +1,12 @@
 import random
-from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.regulation.ModuleRegulator import ModuleRegulator
+from cmcomponents.biophysics.BacterialModels.CLBacterium import CLBacterium
 from CellModeller.GUI import Renderers
 import numpy
 import math
 
 #Import Euler integrator for solving ODE system of chemical species inside the cells
-from CellModeller.Integration.CLEulerIntegrator import CLEulerIntegrator
+from cmcomponents.integration.CLEulerIntegrator import CLEulerIntegrator
 
 max_cells = 100000
 

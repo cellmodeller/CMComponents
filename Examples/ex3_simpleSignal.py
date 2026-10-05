@@ -1,12 +1,12 @@
 import random
-from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.regulation.ModuleRegulator import ModuleRegulator
+from cmcomponents.biophysics.BacterialModels.CLBacterium import CLBacterium
 import numpy
 import math
 
-from CellModeller.Integration.CLCrankNicIntegrator import CLCrankNicIntegrator 
-from CellModeller.Integration.CLEulerSigIntegrator import CLEulerSigIntegrator
-from CellModeller.Signalling.GridDiffusion import GridDiffusion 
+from cmcomponents.integration.CLCrankNicIntegrator import CLCrankNicIntegrator 
+from cmcomponents.integration.CLEulerSigIntegrator import CLEulerSigIntegrator
+from cmcomponents.signalling.GridDiffusion import GridDiffusion 
 
 
 

@@ -1,11 +1,11 @@
 import random
-from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.regulation.ModuleRegulator import ModuleRegulator
+from cmcomponents.biophysics.BacterialModels.CLBacterium import CLBacterium
 import numpy
 import math
 
-from CellModeller.Signalling.GridDiffusion import GridDiffusion #add
-from CellModeller.Integration.CLCrankNicIntegrator import CLCrankNicIntegrator #add
+from cmcomponents.signalling.GridDiffusion import GridDiffusion #add
+from cmcomponents.integration.CLCrankNicIntegrator import CLCrankNicIntegrator #add
 
 
 max_cells = 2**15

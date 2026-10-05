@@ -1,6 +1,6 @@
 import random
-from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.regulation.ModuleRegulator import ModuleRegulator
+from cmcomponents.biophysics.BacterialModels.CLBacterium import CLBacterium
 import numpy
 
 max_cells = 2**15
