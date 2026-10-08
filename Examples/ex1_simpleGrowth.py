@@ -21,7 +21,7 @@ def setup(sim):
 
     # Add some objects to draw the models
     #if sim.is_gui:
-    from CellModeller.GUI import Renderers
+    from CellModeller.gui import Renderers
     therenderer = Renderers.GLBacteriumRenderer(sim)
     sim.addRenderer(therenderer)
     #else:
