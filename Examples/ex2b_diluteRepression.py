@@ -1,11 +1,11 @@
 import random
-from cmcomponents.regulation.module_regulator import ModuleRegulator
-from cmcomponents.biophysics.bacterial_models.cl_bacterium import CLBacterium
+from cmcomponents.regulation import ModuleRegulator
+from cmcomponents.biophysics.bacterial_models import CLBacterium
 import numpy
 import math
 
 #Import Euler integrator for solving ODE system of chemical species inside the cells
-from cmcomponents.integration.cl_euler_integrator import CLEulerIntegrator
+from cmcomponents.integration import CLEulerIntegrator
 
 max_cells = 2**15
 
