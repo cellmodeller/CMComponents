@@ -1,4 +1,4 @@
-from cmcomponents.signalling.GridDiffusion import GridDiffusion
+from cmcomponents.signalling.grid_diffusion import GridDiffusion
 from cmcomponents.integration.cl_crank_nic_integrator import CLCrankNicIntegrator
 from cmcomponents.regulation.module_regulator import ModuleRegulator
 from cmcomponents.biophysics.bacterial_models.cl_bacterium import CLBacterium

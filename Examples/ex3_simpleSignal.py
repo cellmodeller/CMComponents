@@ -6,7 +6,7 @@ import math
 
 from cmcomponents.integration.cl_crank_nic_integrator import CLCrankNicIntegrator 
 from cmcomponents.integration.cl_euler_sig_integrator import CLEulerSigIntegrator
-from cmcomponents.signalling.GridDiffusion import GridDiffusion 
+from cmcomponents.signalling.grid_diffusion import GridDiffusion 
 
 
 

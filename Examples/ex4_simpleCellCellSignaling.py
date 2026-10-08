@@ -4,7 +4,7 @@ from cmcomponents.biophysics.bacterial_models.cl_bacterium import CLBacterium
 import numpy
 import math
 
-from cmcomponents.signalling.GridDiffusion import GridDiffusion #add
+from cmcomponents.signalling.grid_diffusion import GridDiffusion #add
 from cmcomponents.integration.cl_crank_nic_integrator import CLCrankNicIntegrator #add
 
 
