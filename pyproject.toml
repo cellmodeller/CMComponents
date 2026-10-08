@@ -20,7 +20,7 @@ dependencies = [
     "scipy",
     "pyopencl",
     "setuptools",
-    "CellModeller @ git+https://github.com/cellmodeller/CellModeller.git@feature/tim/repo-split",
+    "CellModeller @ git+https://github.com/cellmodeller/CellModeller.git@v4.5.0",
 ]
 
 [project.urls]
