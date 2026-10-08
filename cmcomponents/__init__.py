@@ -2,11 +2,10 @@
 
 __version__ = "0.1.0"
 
-from . import biophysics, integration, regulation, signalling
+from . import biophysics, integration, signalling
 
 __all__ = [
     "biophysics",
     "integration",
-    "regulation",
     "signalling",
 ]
