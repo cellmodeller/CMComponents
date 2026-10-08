@@ -95,7 +95,7 @@ class CLEulerIntegrator:
         # Get user defined kernel source
         specRateKernel = self.regul.specRateCL()
         from pkg_resources import resource_string
-        kernel_src = resource_string(__name__, 'CLEulerIntegrator.cl').decode()
+        kernel_src = resource_string(__name__, 'cl_euler_integrator.cl').decode()
         # substitute user defined kernel code, and number of signals
         kernel_src = kernel_src%(specRateKernel)
         self.program = cl.Program(self.context, kernel_src).build(cache_dir=False)
