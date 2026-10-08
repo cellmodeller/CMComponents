@@ -1,6 +1,6 @@
 import random
 from cmcomponents.regulation.ModuleRegulator import ModuleRegulator
-from cmcomponents.biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.biophysics.bacterial_models.CLBacterium import CLBacterium
 from CellModeller.GUI import Renderers
 import numpy
 import math
