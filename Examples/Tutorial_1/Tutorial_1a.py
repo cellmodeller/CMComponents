@@ -1,7 +1,7 @@
 import random
 from cmcomponents.regulation import ModuleRegulator
 from cmcomponents.biophysics.bacterial_models import CLBacterium
-from CellModeller.gui import Renderers
+from CellModeller.gui import renderers
 import numpy
 import math
 
@@ -18,7 +18,7 @@ def setup(sim):
     sim.addCell(cellType=0, pos=(0,0,0), dir=(1,0,0))
 
     # Add some objects to draw the models
-    therenderer = Renderers.GLBacteriumRenderer(sim)
+    therenderer = renderers.GLBacteriumRenderer(sim)
     sim.addRenderer(therenderer)
     
     # Specify how often data is saved

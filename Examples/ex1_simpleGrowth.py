@@ -21,8 +21,8 @@ def setup(sim):
 
     # Add some objects to draw the models
     #if sim.is_gui:
-    from CellModeller.gui import Renderers
-    therenderer = Renderers.GLBacteriumRenderer(sim)
+    from CellModeller.gui import renderers
+    therenderer = renderers.GLBacteriumRenderer(sim)
     sim.addRenderer(therenderer)
     #else:
     #    print("Running in batch mode: no display will be output")

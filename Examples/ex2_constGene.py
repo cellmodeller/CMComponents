@@ -26,8 +26,8 @@ def setup(sim):
 
     if sim.is_gui:
         # Add some objects to draw the models
-        from CellModeller.gui import Renderers
-        therenderer = Renderers.GLBacteriumRenderer(sim)
+        from CellModeller.gui import renderers
+        therenderer = renderers.GLBacteriumRenderer(sim)
         sim.addRenderer(therenderer)
 
     sim.pickleSteps = 10
