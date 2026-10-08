@@ -5,7 +5,7 @@ import numpy
 import math
 
 #Import Euler integrator for solving ODE system of chemical species inside the cells
-from cmcomponents.integration.CLEulerIntegrator import CLEulerIntegrator
+from cmcomponents.integration.cl_euler_integrator import CLEulerIntegrator
 
 max_cells = 2**15
 
