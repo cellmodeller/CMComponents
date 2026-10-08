@@ -6,7 +6,7 @@ import numpy
 import math
 
 from cmcomponents.signalling.GridDiffusion import GridDiffusion #add
-from cmcomponents.integration.CLCrankNicIntegrator import CLCrankNicIntegrator #add
+from cmcomponents.integration.cl_crank_nic_integrator import CLCrankNicIntegrator #add
 
 
 max_cells = 10000
