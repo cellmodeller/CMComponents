@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cmcomponents"
-version = "0.1.0"
+version = "1.0.0"
 description = "Components to run models in CellModeller."
 readme = "README.md"
 license = "BSD-3-Clause"
