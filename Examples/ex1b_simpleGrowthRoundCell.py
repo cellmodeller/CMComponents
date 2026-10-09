@@ -1,5 +1,5 @@
 import random
-from cellmodeller.Regulation.ModuleRegulator import ModuleRegulator
+from cellmodeller.regulation.module_regulator import ModuleRegulator
 from cmcomponents.biophysics.bacterial_models import CLBacterium
 import numpy
 import math
