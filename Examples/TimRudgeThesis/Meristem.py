@@ -1,8 +1,8 @@
 from cmcomponents.signalling import GridDiffusion
 from cmcomponents.integration import CLCrankNicIntegrator
-from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
+from cellmodeller.Regulation.ModuleRegulator import ModuleRegulator
 from cmcomponents.biophysics.bacterial_models import CLBacterium
-from CellModeller.gui import renderers
+from cellmodeller.gui import renderers
 import numpy
 import random
 

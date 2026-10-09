@@ -202,7 +202,7 @@ class CLCrankNicIntegrator:
         # Get user defined kernel source
         specRateKernel = self.regul.specRateCL()
         sigRateKernel = self.regul.sigRateCL()
-        #kernel_src = open('CellModeller/Integration/CLCrankNicIntegrator.cl', 'r').read()
+        #kernel_src = open('cellmodeller/Integration/CLCrankNicIntegrator.cl', 'r').read()
         from pkg_resources import resource_string
         kernel_src = resource_string(__name__, 'cl_crank_nic_integrator.cl').decode()
         # substitute user defined kernel code, and number of signals

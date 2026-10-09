@@ -330,7 +330,7 @@ class CLBacterium:
         self.calc_cell_vol(self.cell_vols_dev, self.cell_rads_dev, self.cell_lens_dev)
 
     def load_test_data(self):
-        import CellModeller.Biophysics.BacterialModels.CLData as data
+        import cellmodeller.Biophysics.BacterialModels.CLData as data
         self.cell_centers.put(list(range(len(data.pos))), data.pos)
         self.cell_dirs.put(list(range(len(data.dirs))), data.dirs)
         self.cell_lens.put(list(range(len(data.lens))), data.lens)
@@ -495,7 +495,7 @@ class CLBacterium:
                 opstring = opstring + '\n'
         print("MTM")
         print(opstring)
-        open('CellModeller/Biophysics/BacterialModels/matrix.mat', 'w').write(opstring)
+        open('cellmodeller/Biophysics/BacterialModels/matrix.mat', 'w').write(opstring)
 
 
     def dump_cell_data(self, n):

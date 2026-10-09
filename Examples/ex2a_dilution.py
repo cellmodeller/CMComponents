@@ -1,5 +1,5 @@
 import random
-from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
+from cellmodeller.Regulation.ModuleRegulator import ModuleRegulator
 from cmcomponents.biophysics.bacterial_models import CLBacterium
 import numpy
 import math
@@ -25,7 +25,7 @@ def setup(sim):
 
     if sim.is_gui:
         # Add some objects to draw the models
-        from CellModeller.gui import renderers
+        from cellmodeller.gui import renderers
         therenderer = renderers.GLBacteriumRenderer(sim)
         sim.addRenderer(therenderer)
 
