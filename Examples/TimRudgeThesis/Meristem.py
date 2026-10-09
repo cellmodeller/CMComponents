@@ -1,8 +1,8 @@
-from CellModeller.Signalling.GridDiffusion import GridDiffusion
-from CellModeller.Integration.CLCrankNicIntegrator import CLCrankNicIntegrator
+from cmcomponents.signalling import GridDiffusion
+from cmcomponents.integration import CLCrankNicIntegrator
 from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
-from CellModeller.GUI import Renderers
+from cmcomponents.biophysics.bacterial_models import CLBacterium
+from CellModeller.gui import renderers
 import numpy
 import random
 
@@ -18,7 +18,7 @@ def setup(sim):
 
     sim.init(biophys, reg, None, None)
 
-    therend = Renderers.GLBacteriumRenderer(sim)
+    therend = renderers.GLBacteriumRenderer(sim)
     sim.addRenderer(therend)
 
     sim.addCell(cellType=0, pos=(0,0,0), len=2.0)

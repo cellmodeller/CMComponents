@@ -1,6 +1,6 @@
 import random
 from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.biophysics.bacterial_models import CLBacterium
 import numpy
 import math
 
@@ -19,8 +19,8 @@ def setup(sim):
 
     if sim.is_gui:
         # Add some objects to draw the models
-        from CellModeller.GUI import Renderers
-        therenderer = Renderers.GLBacteriumRenderer(sim)
+        from CellModeller.gui import renderers
+        therenderer = renderers.GLBacteriumRenderer(sim)
         sim.addRenderer(therenderer)
 
     sim.pickleSteps = 10

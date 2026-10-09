@@ -1,12 +1,12 @@
 import random
 from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
-from CellModeller.GUI import Renderers
+from cmcomponents.biophysics.bacterial_models import CLBacterium
+from CellModeller.gui import renderers
 import numpy
 import math
 
 #Import Euler integrator for solving ODE system of chemical species inside the cells
-from CellModeller.Integration.CLEulerIntegrator import CLEulerIntegrator
+from cmcomponents.integration import CLEulerIntegrator
 
 max_cells = 100000
 
@@ -25,7 +25,7 @@ def setup(sim):
     sim.addCell(cellType=0, pos=(0,0,0)) 
 
     # Add some objects to draw the models
-    therenderer = Renderers.GLBacteriumRenderer(sim)
+    therenderer = renderers.GLBacteriumRenderer(sim)
     sim.addRenderer(therenderer)
 
     sim.pickleSteps = 20

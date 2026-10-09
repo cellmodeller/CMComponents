@@ -1,12 +1,12 @@
 import random
 from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
+from cmcomponents.biophysics.bacterial_models import CLBacterium
 import numpy
 import math
 
-from CellModeller.Integration.CLCrankNicIntegrator import CLCrankNicIntegrator 
-from CellModeller.Integration.CLEulerSigIntegrator import CLEulerSigIntegrator
-from CellModeller.Signalling.GridDiffusion import GridDiffusion 
+from cmcomponents.integration import CLCrankNicIntegrator 
+from cmcomponents.integration import CLEulerSigIntegrator
+from cmcomponents.signalling import GridDiffusion 
 
 
 
@@ -44,10 +44,10 @@ def setup(sim):
 
     if sim.is_gui:
         # Add some objects to draw the models
-        from CellModeller.GUI import Renderers
-        therenderer = Renderers.GLBacteriumRenderer(sim)
+        from CellModeller.gui import renderers
+        therenderer = renderers.GLBacteriumRenderer(sim)
         sim.addRenderer(therenderer)
-        sigrend = Renderers.GLGridRenderer(sig, integ) # Add
+        sigrend = renderers.GLGridRenderer(sig, integ) # Add
         sim.addRenderer(sigrend) #Add
 
     sim.pickleSteps = 10
