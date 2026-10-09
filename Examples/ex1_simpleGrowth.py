@@ -1,6 +1,6 @@
 import random
 from CellModeller.Regulation.ModuleRegulator import ModuleRegulator
-from cmcomponents.biophysics.bacterial_models import CLBacterium
+from CellModeller.Biophysics.BacterialModels.CLBacterium import CLBacterium
 import numpy
 import math
 
@@ -21,8 +21,8 @@ def setup(sim):
 
     # Add some objects to draw the models
     #if sim.is_gui:
-    from CellModeller.gui import renderers
-    therenderer = renderers.GLBacteriumRenderer(sim)
+    from CellModeller.GUI import Renderers
+    therenderer = Renderers.GLBacteriumRenderer(sim)
     sim.addRenderer(therenderer)
     #else:
     #    print("Running in batch mode: no display will be output")
